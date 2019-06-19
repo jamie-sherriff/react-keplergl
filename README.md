@@ -1,6 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 [View Live Project](https://jamie-sherriff.github.io/react-keplergl/)
+Simple demo using react and kepler GL
 
 ## Available Scripts
 

@@ -9,11 +9,11 @@
           "type": "point",
           "config": {
             "dataId": "dgunthvkn",
-            "label": "wgs84",
+            "label": "Bus Stops",
             "color": [
-              221,
-              178,
-              124
+              255,
+              152,
+              51
             ],
             "columns": {
               "lat": "WGS84_LATITUDE",
@@ -22,7 +22,7 @@
             },
             "isVisible": true,
             "visConfig": {
-              "radius": 10,
+              "radius": 2,
               "fixedRadius": false,
               "opacity": 0.8,
               "outline": false,
@@ -60,23 +60,7 @@
               ],
               "filled": true
             },
-            "textLabel": [
-              {
-                "field": null,
-                "color": [
-                  255,
-                  255,
-                  255
-                ],
-                "size": 18,
-                "offset": [
-                  0,
-                  0
-                ],
-                "anchor": "start",
-                "alignment": "center"
-              }
-            ]
+            "textLabel": []
           },
           "visualChannels": {
             "colorField": null,
@@ -88,102 +72,7 @@
           }
         },
         {
-          "id": "vb2fqcy",
-          "type": "geojson",
-          "config": {
-            "dataId": "dgunthvkn",
-            "label": "Bus_Stops",
-            "color": [
-              207,
-              23,
-              80
-            ],
-            "columns": {
-              "geojson": "_geojson"
-            },
-            "isVisible": true,
-            "visConfig": {
-              "opacity": 0.8,
-              "thickness": 2,
-              "strokeColor": null,
-              "colorRange": {
-                "name": "Global Warming",
-                "type": "sequential",
-                "category": "Uber",
-                "colors": [
-                  "#5A1846",
-                  "#900C3F",
-                  "#C70039",
-                  "#E3611C",
-                  "#F1920E",
-                  "#FFC300"
-                ]
-              },
-              "strokeColorRange": {
-                "name": "Global Warming",
-                "type": "sequential",
-                "category": "Uber",
-                "colors": [
-                  "#5A1846",
-                  "#900C3F",
-                  "#C70039",
-                  "#E3611C",
-                  "#F1920E",
-                  "#FFC300"
-                ]
-              },
-              "radius": 1,
-              "sizeRange": [
-                0,
-                10
-              ],
-              "radiusRange": [
-                0,
-                50
-              ],
-              "heightRange": [
-                0,
-                500
-              ],
-              "elevationScale": 5,
-              "stroked": true,
-              "filled": true,
-              "enable3d": false,
-              "wireframe": false
-            },
-            "textLabel": [
-              {
-                "field": null,
-                "color": [
-                  255,
-                  255,
-                  255
-                ],
-                "size": 18,
-                "offset": [
-                  0,
-                  0
-                ],
-                "anchor": "start",
-                "alignment": "center"
-              }
-            ]
-          },
-          "visualChannels": {
-            "colorField": null,
-            "colorScale": "quantile",
-            "sizeField": null,
-            "sizeScale": "linear",
-            "strokeColorField": null,
-            "strokeColorScale": "quantile",
-            "heightField": null,
-            "heightScale": "linear",
-            "radiusField": null,
-            "radiusScale": "linear"
-          }
-        },
-        {
-          "id": "tbm52q7",
+          "id": "cq8v0yl",
           "type": "geojson",
           "config": {
             "dataId": "mty4ajbu",
@@ -210,14 +99,14 @@
                 "type": "sequential",
                 "category": "ColorBrewer",
                 "colors": [
-                  "#006837",
-                  "#31a354",
-                  "#78c679",
-                  "#addd8e",
+                  "#ffffcc",
                   "#d9f0a3",
-                  "#ffffcc"
+                  "#addd8e",
+                  "#78c679",
+                  "#31a354",
+                  "#006837"
                 ],
-                "reversed": true
+                "reversed": false
               },
               "strokeColorRange": {
                 "name": "Global Warming",
@@ -338,7 +227,7 @@
               "radius": 10,
               "sizeRange": [
                 0,
-                10
+                3.6
               ],
               "radiusRange": [
                 0,
@@ -429,10 +318,10 @@
     "mapState": {
       "bearing": 0,
       "dragRotate": false,
-      "latitude": -43.57643138714584,
-      "longitude": 172.70782523757697,
+      "latitude": -43.498808954194544,
+      "longitude": 172.60007080724023,
       "pitch": 0,
-      "zoom": 11.192235667667807,
+      "zoom": 9.929903268834632,
       "isSplit": false
     },
     "mapStyle": {

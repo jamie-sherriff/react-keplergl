@@ -14,29 +14,52 @@ import KeplerGlSchema from 'kepler.gl/schemas';
 import mapConfigJson from './geodata/config-all.json';
 
 //const parkData = React.lazy(()=>import('./geodata/Bus_Routes.js'))
-import  parkData from './geodata/Bus_Routes.js'
+import  busRouteData from './geodata/Bus_Routes.js'
+import  ParkMapData from './geodata/Parks.js'
+import  busStopData from './geodata/Bus_Stops.js'
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN// eslint-disable-line
-console.log(MAPBOX_TOKEN);
 
 class App extends Component {
   componentDidMount() {
     // Use processCsvData helper to convert csv file into kepler.gl structure {fields, rows}
-    const data = Processors.processGeojson(parkData);
-    console.log(parkData);
+    const processedBusRouteData = Processors.processGeojson(busRouteData);
+    const processedParkMapData = Processors.processGeojson(ParkMapData);
+    const processedBusStopData = Processors.processGeojson(busStopData);
     // Create dataset structure
-    console.log('here')
-    console.log(data);
-    const dataset = {
-      data,
+    const dataset1 = {
+      data: processedBusRouteData,
       info: {
+        label: 'Bus Routes',
         // this is used to match the dataId defined in nyc-config.json. For more details see API documentation.
         // It is paramount that this id matches your configuration otherwise the configuration file will be ignored.
         id: 'bk4x78l5m'
       }
     };
+
+    const dataset2 = {
+      data: processedParkMapData,
+      info: {
+        label: 'Parks',
+        // this is used to match the dataId defined in nyc-config.json. For more details see API documentation.
+        // It is paramount that this id matches your configuration otherwise the configuration file will be ignored.
+        id: 'mty4ajbu'
+      }
+    };
+
+    const dataset3 = {
+      data: processedBusStopData,
+      info: {
+        label: 'Bus Stops',
+        // this is used to match the dataId defined in nyc-config.json. For more details see API documentation.
+        // It is paramount that this id matches your configuration otherwise the configuration file will be ignored.
+        id: 'dgunthvkn'
+      }
+    };
+
+
     // addDataToMap action to inject dataset into kepler.gl instance
     //hide side bar options: {readOnly: true}
-    this.props.dispatch(addDataToMap({datasets: dataset, config: mapConfigJson}));
+    this.props.dispatch(addDataToMap({datasets: [dataset1,dataset2,dataset3], config: mapConfigJson}));
   }
 
 

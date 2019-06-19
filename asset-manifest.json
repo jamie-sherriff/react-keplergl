@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-keplergl/static/css/main.2cce8147.chunk.css",
+    "main.js": "/react-keplergl/static/js/main.a9a985d1.chunk.js",
+    "main.js.map": "/react-keplergl/static/js/main.a9a985d1.chunk.js.map",
+    "runtime~main.js": "/react-keplergl/static/js/runtime~main.96ab2b09.js",
+    "runtime~main.js.map": "/react-keplergl/static/js/runtime~main.96ab2b09.js.map",
+    "static/js/2.b41502e9.chunk.js": "/react-keplergl/static/js/2.b41502e9.chunk.js",
+    "static/js/2.b41502e9.chunk.js.map": "/react-keplergl/static/js/2.b41502e9.chunk.js.map",
+    "index.html": "/react-keplergl/index.html",
+    "precache-manifest.57703f5fa2778f207bc0a865add30931.js": "/react-keplergl/precache-manifest.57703f5fa2778f207bc0a865add30931.js",
+    "service-worker.js": "/react-keplergl/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/react-keplergl/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/react-keplergl/static/media/logo.5d5d9eef.svg"
+  }
+}
